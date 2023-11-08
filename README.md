@@ -3,7 +3,7 @@
 I'm currently pursuing my Bachelor of Science in Computer Science at [Stony Brook University](https://www.stonybrook.edu/).
 
 ## 🛠 Skills 
-- **Languages:** Java, Python, C, C#, OCaml, HTML, CSS, JavaScript, Kotlin, MIPS, Scala, MySQL
+- **Languages:** Java, Python, C, C++, C#, OCaml, HTML, CSS, JavaScript, Kotlin, MIPS, Scala, MySQL
 - **Utilities:** React.js, Node.js, Spring, Django, MongoDB, Google Cloud, Flask, TensorFlow, Pytorch, Keras, Unity
 
 ## 👥 Community Engagement
