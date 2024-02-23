@@ -1,4 +1,4 @@
-# Ciao Friends! 😎
+<img src="https://github.com/ritessshhh/ritessshhh/assets/81812754/a0293b4c-25ad-4a6d-855d-43161ba71126" width="500px">
 
 I'm currently pursuing my Bachelor of Science in Computer Science at [Stony Brook University](https://www.stonybrook.edu/).
 
