@@ -1,8 +1,8 @@
 I'm currently pursuing my Bachelor of Science in Computer Science at [Stony Brook University](https://www.stonybrook.edu/).
 
 ## 🛠 Skills 
-- **Languages:** Java, Python, C, C++, C#, OCaml, HTML, CSS, JavaScript, Kotlin, MIPS, Scala, MySQL
-- **Utilities:** React.js, Node.js, Spring, Django, MongoDB, Google Cloud, Flask, TensorFlow, Pytorch, Keras, Unity
+- **Languages:** Java, Python, C, C++, OCaml, HTML, CSS, JavaScript, Kotlin, MIPS, Scala, and TypeScript
+- **Utilities:** React.js, Node.js, Django, MongoDB, Google Cloud, Flask, AWS, TensorFlow, Pytorch, Keras, Unity
 
 ## 👥 Community Engagement
 Serving as the Vice President of the [Stony Brook Computing Society](#), I’m devoted to fostering a vibrant tech community. I've played a pivotal role in organizing events and talks, and forging collaborations that have increased event attendance and engagement.
