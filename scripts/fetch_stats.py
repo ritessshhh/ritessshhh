@@ -163,9 +163,12 @@ def fetch_profile():
 
 
 def list_repos():
-    """Owned, non-fork repos. With a token this includes private repos too."""
+    """PUBLIC, non-fork repos. Language + star stats use public repos only
+    (matching what GitHub shows on a profile), so private or vendored code never
+    distorts the language bar. Private activity still counts toward the
+    contribution graph via the GraphQL calendar."""
     repos, page = [], 1
-    base = "/user/repos?affiliation=owner&per_page=100" if TOKEN else f"/users/{USER}/repos?per_page=100"
+    base = f"/users/{USER}/repos?per_page=100"
     while True:
         batch = rest(f"{base}&page={page}")
         if not batch:
@@ -179,7 +182,8 @@ def list_repos():
 
 # Container/markup formats whose byte counts wildly overstate real coding
 # effort (a notebook embeds its rendered image outputs). Kept out of the bar.
-LANG_EXCLUDE = {"Jupyter Notebook", "HTML", "CSS", "TeX", "Roff", "Makefile", "Dockerfile"}
+LANG_EXCLUDE = {"Jupyter Notebook", "HTML", "CSS", "SCSS", "MDX", "TeX", "Roff",
+                "Makefile", "Dockerfile"}
 
 
 def fetch_languages(repos):
@@ -195,19 +199,10 @@ def fetch_languages(repos):
     return [{"name": n, "bytes": b, "pct": round(100 * b / grand, 1)} for n, b in ranked]
 
 
-def fetch_loc(repos):
-    """Sum this user's additions/deletions across all repos via stats/contributors."""
-    added = removed = 0
-    for r in repos:
-        stats = rest(f"/repos/{r['full_name']}/stats/contributors")
-        if not stats:
-            continue
-        for contrib in stats:
-            if (contrib.get("author") or {}).get("login", "").lower() == USER.lower():
-                for wk in contrib["weeks"]:
-                    added += wk["a"]
-                    removed += wk["d"]
-    return {"added": added, "removed": removed, "net": added - removed}
+# NOTE: lines of code is NOT computed here. GitHub's stats/contributors counts
+# raw additions+deletions (churn) across ALL files ever -- vendored/generated
+# code makes it wildly inflated. The real figure comes from get-loc/get-loc.py
+# (cloc, datasets excluded) into get-loc/loc.json, which the info card reads.
 
 
 # ---- assembly -------------------------------------------------------------
@@ -279,17 +274,13 @@ def main():
     out["stars"] = sum(r["stargazers_count"] for r in repos) if repos else prev.get("stars", 0)
     out["languages"] = (guarded(prev, "languages", lambda: fetch_languages(repos))
                         if repos else prev.get("languages", []))
-    out["loc"] = (guarded(prev, "loc", lambda: fetch_loc(repos))
-                  if repos else prev.get("loc", {}))
 
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
-    with open(OUT, "w") as f:
+    with open(OUT, "w", encoding="utf-8") as f:
         json.dump(out, f, indent=2)
-    loc = out.get("loc") or {}
     print(f"wrote {OUT}: {cal['total']} contribs, "
           f"streak {out['streaks'].get('current')}/{out['streaks'].get('longest')}, "
-          f"{len(out['languages'])} languages, "
-          f"+{loc.get('added', 0):,}/-{loc.get('removed', 0):,} LOC")
+          f"{len(out['languages'])} languages")
 
 
 if __name__ == "__main__":

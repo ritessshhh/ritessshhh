@@ -58,7 +58,7 @@ ABBREV = {"JavaScript": "JS", "TypeScript": "TS", "Jupyter Notebook": "Notebook"
 
 def load_json(path):
     try:
-        with open(path) as f:
+        with open(path, encoding="utf-8") as f:
             return json.load(f)
     except (OSError, ValueError):
         return {}
@@ -68,7 +68,7 @@ def n(x):
     try:
         return f"{int(x):,}"
     except (TypeError, ValueError):
-        return "—"
+        return "-"
 
 
 S = load_json(STATS_PATH)
@@ -78,7 +78,6 @@ streaks = S.get("streaks") or {}
 best = S.get("best_day") or {}
 prof = S.get("profile") or {}
 act = S.get("activity") or {}
-loc = S.get("loc") or {}
 
 # LOC total from cloc (get-loc.py), datasets already excluded -> the big number.
 code_lines = LOC.get("total_code")
@@ -120,26 +119,21 @@ ROWS = [
     ("sec", "Activity (live)"),
     ("bul", f"{n(total)} contribs/yr · peak {n(best_c)} · \U0001f525 {n(active)} active days"),
 ]
-# lines-of-code line, best source first:
-#   1. cloc "real code" total from get-loc/loc.json (datasets excluded)
-#   2. else additions/deletions churn from stats.json (needs a token)
-#   3. else the commits/PRs/reviews breakdown
+# lines-of-code line: the real cloc total from get-loc/loc.json (datasets
+# excluded). If get-loc.py hasn't run / loc.json isn't committed, fall back to
+# the commits/PRs/reviews breakdown -- NEVER the misleading additions/deletions
+# churn, which counts vendored code and reads in the millions.
 if code_lines:
-    line = f"{n(code_lines)} lines of code written"
-    if act.get("commits"):
-        line += f" · {n(act['commits'])} commits"
-    ROWS.append(("bul", line))
-elif loc.get("added"):
-    extra = f"+{n(loc['added'])} / -{n(loc['removed'])} lines pushed"
-    if act.get("commits"):
-        extra += f" · {n(act['commits'])} commits"
-    ROWS.append(("bul", extra))
+    ROWS.append(("bul", f"{n(code_lines)} lines of code written"))
 elif act.get("commits"):
     ROWS.append(("bul", f"{n(act['commits'])} commits · {n(act.get('prs'))} PRs · {n(act.get('reviews'))} reviews"))
 
 
 def esc(s):
-    return html.escape(str(s))
+    # ASCII-only output: turn ·, —, ×, emoji, etc. into numeric character
+    # references so the SVG is immune to whatever encoding the CI runner writes
+    # with (a UTF-8 mismatch on the runner is what produced "Â·" / "ð¥").
+    return html.escape(str(s)).encode("ascii", "xmlcharrefreplace").decode("ascii")
 
 
 def rise(inner, i):
@@ -241,6 +235,6 @@ head.append(f'<text x="{W/2}" y="{TITLEBAR_H/2 + 4}" fill="{MUTED}" font-size="1
             f'text-anchor="middle">{HANDLE}@github: ~$ neofetch</text>')
 
 svg = "".join(head + body + ["</svg>"])
-with open(OUT, "w") as f:
+with open(OUT, "w", encoding="utf-8") as f:
     f.write(svg)
 print("wrote", OUT, len(svg), "bytes;", W, "x", H)

@@ -10,8 +10,8 @@
 
 <table>
 <tr>
-<td valign="top"><img src="./ascii.svg" width="370" alt="Ritesh Chavan — ASCII portrait" /></td>
-<td valign="top"><img src="./info-card.svg" width="490" alt="Ritesh Chavan — research, stack, live stats" /></td>
+<td valign="top"><img src="./ascii.svg" height="400" alt="Ritesh Chavan — ASCII portrait" /></td>
+<td valign="top"><img src="./info-card.svg" height="400" alt="Ritesh Chavan — research, stack, live stats" /></td>
 </tr>
 </table>
 
