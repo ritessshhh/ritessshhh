@@ -6,13 +6,6 @@
      the info card + contribution graph refresh daily via
      .github/workflows/update-profile-art.yml (data from scripts/fetch_stats.py) -->
 
-<h3><code>ritessshhh@github ~ $ ./contributions.sh</code></h3>
-
-<img src="./contrib-heatmap.svg" width="860" alt="Ritesh's GitHub contribution graph — auto-refreshed daily" />
-
-<br>
-<br>
-
 <h3><code>ritessshhh@github ~ $ whoami</code></h3>
 
 <table>
@@ -25,15 +18,8 @@
 <br>
 <br>
 
-<h3><code>ritessshhh@github ~ $ ./links.sh</code></h3>
+<h3><code>ritessshhh@github ~ $ ./contributions.sh</code></h3>
 
-<p><b>ML Researcher · LLM &amp; Multimodal AI · Security Enthusiast</b></p>
-
-[![Portfolio](https://img.shields.io/badge/Portfolio-ritessshhh.github.io-0d1117?style=for-the-badge&logo=vercel&logoColor=white)](https://ritessshhh.github.io)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-riteeessshhh-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/riteeessshhh)
-[![Email](https://img.shields.io/badge/Email-rchavan.cs@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:rchavan.cs@gmail.com)
-[![GitHub](https://img.shields.io/badge/GitHub-ritessshhh-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ritessshhh)
-
-<br>
+<img src="./contrib-heatmap.svg" width="860" alt="Ritesh's GitHub contribution graph — auto-refreshed daily" />
 
 </div>
