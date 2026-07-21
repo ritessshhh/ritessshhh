@@ -1,8 +1,8 @@
 {
   "username": "ritessshhh",
-  "generated_at": "2026-07-21T18:41:10Z",
+  "generated_at": "2026-07-21T20:28:19Z",
   "calendar": {
-    "total": 931,
+    "total": 941,
     "days": [
       {
         "date": "2025-07-20",
@@ -311,13 +311,13 @@
       },
       {
         "date": "2025-09-19",
-        "count": 10,
+        "count": 9,
         "level": 1
       },
       {
         "date": "2025-09-20",
-        "count": 0,
-        "level": 0
+        "count": 1,
+        "level": 1
       },
       {
         "date": "2025-09-21",
@@ -806,12 +806,12 @@
       },
       {
         "date": "2025-12-27",
-        "count": 10,
+        "count": 9,
         "level": 1
       },
       {
         "date": "2025-12-28",
-        "count": 6,
+        "count": 7,
         "level": 1
       },
       {
@@ -1026,12 +1026,12 @@
       },
       {
         "date": "2026-02-09",
-        "count": 2,
+        "count": 1,
         "level": 1
       },
       {
         "date": "2026-02-10",
-        "count": 7,
+        "count": 8,
         "level": 1
       },
       {
@@ -1836,26 +1836,38 @@
       },
       {
         "date": "2026-07-21",
-        "count": 1,
+        "count": 5,
+        "level": 1
+      },
+      {
+        "date": "2026-07-22",
+        "count": 6,
         "level": 1
       }
     ]
   },
   "streaks": {
-    "current": 3,
+    "current": 4,
     "longest": 17
   },
-  "active_days": 265,
+  "active_days": 267,
   "best_day": {
     "date": "2026-07-10",
     "count": 45,
     "level": 4
   },
+  "activity": {
+    "commits": 33,
+    "prs": 0,
+    "issues": 0,
+    "reviews": 0,
+    "private": 904
+  },
   "profile": {
     "name": "R I T E S H",
     "location": "New York, New York",
-    "followers": 13,
-    "public_repos": 35,
+    "followers": 15,
+    "public_repos": 36,
     "created_at": "2021-04-02T12:32:07Z",
     "account_age": {
       "years": 5,
@@ -1863,38 +1875,38 @@
       "text": "5 yrs, 111 days"
     }
   },
-  "repos": 34,
+  "repos": 35,
   "stars": 17,
   "languages": [
     {
       "name": "Python",
-      "bytes": 674663,
-      "pct": 40.4
+      "bytes": 719872,
+      "pct": 42.0
     },
     {
       "name": "Swift",
       "bytes": 299264,
-      "pct": 17.9
+      "pct": 17.5
     },
     {
       "name": "JavaScript",
       "bytes": 212289,
-      "pct": 12.7
+      "pct": 12.4
     },
     {
       "name": "C",
       "bytes": 147481,
-      "pct": 8.8
+      "pct": 8.6
     },
     {
       "name": "C#",
       "bytes": 124383,
-      "pct": 7.4
+      "pct": 7.3
     },
     {
       "name": "ShaderLab",
       "bytes": 85313,
-      "pct": 5.1
+      "pct": 5.0
     },
     {
       "name": "TypeScript",
@@ -1909,12 +1921,12 @@
     {
       "name": "C++",
       "bytes": 31120,
-      "pct": 1.9
+      "pct": 1.8
     },
     {
       "name": "HLSL",
       "bytes": 14360,
-      "pct": 0.9
+      "pct": 0.8
     },
     {
       "name": "Kotlin",
@@ -1929,11 +1941,6 @@
     {
       "name": "Shell",
       "bytes": 1022,
-      "pct": 0.1
-    },
-    {
-      "name": "SCSS",
-      "bytes": 850,
       "pct": 0.1
     },
     {
