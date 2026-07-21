@@ -1,0 +1,10 @@
+# Daily GitHub Action only needs `requests` (see .github/workflows/update-profile-art.yml).
+requests
+
+# The rest are for regenerating the ASCII portrait locally (one-off):
+#   python scripts/prep_photo.py source-image.png && python scripts/make_ascii_svg.py
+Pillow
+numpy
+opencv-python-headless
+rembg
+onnxruntime

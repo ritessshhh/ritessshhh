@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.DS_Store
+.venv/
+
+# get-loc working files (never commit clones or tokens)
+get-loc/github_repos/
+get-loc/*.tar.gz
+get-loc/.env
+
+# personal / local-only — kept on disk, not part of the public profile
+ResumeRiteshFG.pdf
+source-prepped.png
+reference/
