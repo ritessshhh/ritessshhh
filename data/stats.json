@@ -1,8 +1,8 @@
 {
   "username": "ritessshhh",
-  "generated_at": "2026-07-21T19:58:01Z",
+  "generated_at": "2026-07-21T20:00:44Z",
   "calendar": {
-    "total": 933,
+    "total": 937,
     "days": [
       {
         "date": "2025-07-20",
@@ -311,13 +311,13 @@
       },
       {
         "date": "2025-09-19",
-        "count": 10,
+        "count": 9,
         "level": 1
       },
       {
         "date": "2025-09-20",
-        "count": 0,
-        "level": 0
+        "count": 1,
+        "level": 1
       },
       {
         "date": "2025-09-21",
@@ -806,12 +806,12 @@
       },
       {
         "date": "2025-12-27",
-        "count": 10,
+        "count": 9,
         "level": 1
       },
       {
         "date": "2025-12-28",
-        "count": 6,
+        "count": 7,
         "level": 1
       },
       {
@@ -1026,12 +1026,12 @@
       },
       {
         "date": "2026-02-09",
-        "count": 2,
+        "count": 1,
         "level": 1
       },
       {
         "date": "2026-02-10",
-        "count": 7,
+        "count": 8,
         "level": 1
       },
       {
@@ -1838,21 +1838,26 @@
         "date": "2026-07-21",
         "count": 3,
         "level": 1
+      },
+      {
+        "date": "2026-07-22",
+        "count": 4,
+        "level": 1
       }
     ]
   },
   "streaks": {
-    "current": 3,
+    "current": 4,
     "longest": 17
   },
-  "active_days": 265,
+  "active_days": 267,
   "best_day": {
     "date": "2026-07-10",
     "count": 45,
     "level": 4
   },
   "activity": {
-    "commits": 25,
+    "commits": 29,
     "prs": 0,
     "issues": 0,
     "reviews": 0,
@@ -1870,78 +1875,128 @@
       "text": "5 yrs, 111 days"
     }
   },
-  "repos": 34,
+  "repos": 65,
   "stars": 17,
   "languages": [
     {
       "name": "Python",
-      "bytes": 674663,
-      "pct": 40.4
+      "bytes": 28871106,
+      "pct": 54.6
     },
     {
-      "name": "Swift",
-      "bytes": 299264,
-      "pct": 17.9
+      "name": "TypeScript",
+      "bytes": 14744228,
+      "pct": 27.9
     },
     {
-      "name": "JavaScript",
-      "bytes": 212289,
-      "pct": 12.7
+      "name": "MDX",
+      "bytes": 7073796,
+      "pct": 13.4
     },
     {
       "name": "C",
-      "bytes": 147481,
-      "pct": 8.8
+      "bytes": 573294,
+      "pct": 1.1
+    },
+    {
+      "name": "JavaScript",
+      "bytes": 505778,
+      "pct": 1.0
+    },
+    {
+      "name": "Swift",
+      "bytes": 325690,
+      "pct": 0.6
     },
     {
       "name": "C#",
       "bytes": 124383,
-      "pct": 7.4
+      "pct": 0.2
+    },
+    {
+      "name": "C++",
+      "bytes": 122713,
+      "pct": 0.2
+    },
+    {
+      "name": "Cython",
+      "bytes": 122424,
+      "pct": 0.2
+    },
+    {
+      "name": "Shell",
+      "bytes": 105451,
+      "pct": 0.2
     },
     {
       "name": "ShaderLab",
       "bytes": 85313,
-      "pct": 5.1
+      "pct": 0.2
     },
     {
-      "name": "TypeScript",
-      "bytes": 38995,
-      "pct": 2.3
+      "name": "Astro",
+      "bytes": 68736,
+      "pct": 0.1
+    },
+    {
+      "name": "Fortran",
+      "bytes": 40333,
+      "pct": 0.1
     },
     {
       "name": "Java",
       "bytes": 37534,
-      "pct": 2.2
+      "pct": 0.1
     },
     {
-      "name": "C++",
-      "bytes": 31120,
-      "pct": 1.9
+      "name": "GLSL",
+      "bytes": 24569,
+      "pct": 0.0
     },
     {
       "name": "HLSL",
       "bytes": 14360,
-      "pct": 0.9
+      "pct": 0.0
+    },
+    {
+      "name": "PowerShell",
+      "bytes": 11334,
+      "pct": 0.0
+    },
+    {
+      "name": "Nix",
+      "bytes": 8674,
+      "pct": 0.0
     },
     {
       "name": "Kotlin",
-      "bytes": 1688,
-      "pct": 0.1
+      "bytes": 6281,
+      "pct": 0.0
+    },
+    {
+      "name": "PLpgSQL",
+      "bytes": 5722,
+      "pct": 0.0
+    },
+    {
+      "name": "Meson",
+      "bytes": 4589,
+      "pct": 0.0
     },
     {
       "name": "Ruby",
-      "bytes": 1263,
-      "pct": 0.1
-    },
-    {
-      "name": "Shell",
-      "bytes": 1022,
-      "pct": 0.1
+      "bytes": 3728,
+      "pct": 0.0
     },
     {
       "name": "SCSS",
       "bytes": 850,
-      "pct": 0.1
+      "pct": 0.0
+    },
+    {
+      "name": "RenderScript",
+      "bytes": 274,
+      "pct": 0.0
     },
     {
       "name": "Batchfile",
@@ -1949,5 +2004,9 @@
       "pct": 0.0
     }
   ],
-  "loc": null
+  "loc": {
+    "added": 13400705,
+    "removed": 1598675,
+    "net": 11802030
+  }
 }
