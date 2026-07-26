@@ -1,44 +1,9 @@
 {
   "username": "ritessshhh",
-  "generated_at": "2026-07-25T08:26:43Z",
+  "generated_at": "2026-07-26T08:41:27Z",
   "calendar": {
-    "total": 947,
+    "total": 951,
     "days": [
-      {
-        "date": "2025-07-20",
-        "count": 2,
-        "level": 1
-      },
-      {
-        "date": "2025-07-21",
-        "count": 1,
-        "level": 1
-      },
-      {
-        "date": "2025-07-22",
-        "count": 3,
-        "level": 1
-      },
-      {
-        "date": "2025-07-23",
-        "count": 5,
-        "level": 1
-      },
-      {
-        "date": "2025-07-24",
-        "count": 5,
-        "level": 1
-      },
-      {
-        "date": "2025-07-25",
-        "count": 1,
-        "level": 1
-      },
-      {
-        "date": "2025-07-26",
-        "count": 2,
-        "level": 1
-      },
       {
         "date": "2025-07-27",
         "count": 2,
@@ -1856,27 +1821,32 @@
       },
       {
         "date": "2026-07-25",
+        "count": 4,
+        "level": 1
+      },
+      {
+        "date": "2026-07-26",
         "count": 0,
         "level": 0
       }
     ]
   },
   "streaks": {
-    "current": 6,
+    "current": 7,
     "longest": 17
   },
-  "active_days": 269,
+  "active_days": 263,
   "best_day": {
     "date": "2026-07-10",
     "count": 45,
     "level": 4
   },
   "activity": {
-    "commits": 36,
+    "commits": 37,
     "prs": 0,
     "issues": 0,
     "reviews": 0,
-    "private": 907
+    "private": 910
   },
   "profile": {
     "name": "R I T E S H",
@@ -1886,8 +1856,8 @@
     "created_at": "2021-04-02T12:32:07Z",
     "account_age": {
       "years": 5,
-      "days_extra": 114,
-      "text": "5 yrs, 114 days"
+      "days_extra": 115,
+      "text": "5 yrs, 115 days"
     }
   },
   "repos": 34,
